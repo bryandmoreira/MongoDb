@@ -1,0 +1,55 @@
+// Active: 1774550678477@@bryandmoreira_db_user@130110@aula
+db("aula").collection("personagem").find({
+    nome: "Naruto",
+})
+
+db("aula").collection("personagem").find({
+    idade: 17,
+})
+
+db("aula").collection("personagem").find({
+    idade: {$gt: 17}
+})
+
+db("aula").collection("personagem").find({
+    idade: {$lt: 29}
+})
+
+db("aula").collection("personagem").find({
+    idade: {$gte: 18}
+})
+
+db("aula").collection("personagem").find({
+    idade: {$lte: 29}
+})
+
+db("aula").collection("personagem").find({
+    idade: 17,
+    nome: "Naruto",
+})
+
+db("aula").collection("personagem").find({
+    idade: {
+            $gt: 16,
+            $lt: 18,
+    },
+})
+
+db("aula").collection("personagem").find({
+    $or: [
+        { idade: { $lt: 18} },
+        { idade: { $gt: 34}}
+    ]
+})
+
+db("aula").collection("personagem").find({
+    idade: {
+        $ne: 17
+    }
+})
+
+db("aula").collection("personagem").find({
+    nome: {
+        $regex: "Naruto",
+    },
+})

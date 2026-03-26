@@ -1,0 +1,7 @@
+db("aula").collection("personagem").find(
+    {},
+    {
+        nome: 1,
+        Jinchuuriki: true,
+    },
+)

@@ -1,0 +1,7 @@
+// Active: 1774550678477@@bryandmoreira_db_user@130110@aula
+db("aula").collection("personagem").insertOne({
+    nome: "Naruto",
+    clã: "Uzumaki",
+    idade: 17,
+
+})

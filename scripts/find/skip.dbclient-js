@@ -1,0 +1,1 @@
+db("aula").collection("personagem").find().skip(1)

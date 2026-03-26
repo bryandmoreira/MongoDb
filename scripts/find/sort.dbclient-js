@@ -1,0 +1,5 @@
+db("aula").collection("personagem").find().sort({nome: 1})
+//ordem crescente
+
+db("aula").collection("personagem").find().sort({nome: -1})
+//ordem decrescente
