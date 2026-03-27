@@ -1,0 +1,31 @@
+// Active: 1774550678477@@bryandmoreira_db_user@130110@aula
+db("aula").collection("personagem").updateOne(
+    { "nome": "Kaido" },
+    {
+        $set: {
+            fruta: "Uo Uo no Mi",
+        },
+    },
+)
+
+
+db("aula").collection("personagem").updateOne(
+    { idade: 19 },
+    {
+        $inc: {
+            idade: 1
+        },
+    },
+)
+
+db("aula").collection("personagem").findOneAndUpdate(
+    { idade: 20 },
+    {
+        $inc: {
+            idade: -1
+        },
+    },
+    {
+        upsert: true
+    }
+)
